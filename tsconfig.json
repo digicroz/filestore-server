@@ -18,7 +18,19 @@
     "noEmit": false,
     "removeComments": false,
     "preserveConstEnums": true,
-    "sourceMap": true
+    "sourceMap": true,
+
+    "paths": {
+      "@global/*": ["./src/global/*"],
+
+      "@dcFileStorePrisma/*": [
+        "./src/_s2s/dc_file_store/prisma/dc_file_store/*"
+      ],
+      "@dcFileStoreProjectB2f/*": ["./src/_s2s/dc_file_store/projectB2f/*"],
+      "@dcFileStoreJsBase/*": ["./src/_s2s/dc_file_store/dist/dc_file_store/*"],
+      "@dcFileStoreTsBase/*": ["./src/_s2s/dc_file_store/serviceLink/*"],
+      "@dcFileStoreServerB2f/*": ["./src/_s2s/dc_file_store/serverB2f/*"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"]

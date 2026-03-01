@@ -199,6 +199,11 @@
     "vitest": "^4.0.16"
   },
   "dependencies": {
-    "@digicroz/js-kit": "^1.0.11"
+    "@digicroz/js-kit": "^1.0.11",
+    "@trpc/client": "^10.45.2",
+    "@trpc/server": "^10.45.2",
+    "dotenv": "^16.4.7",
+    "superjson": "2.2.2",
+    "zod": "^3.25.42"
   }
 }
