@@ -10,11 +10,13 @@ export const dcFileStoreZodSchemas = serviceLinkZodSchemas;
 export type TDcFileStoreInput = inferRouterInputs<serviceLinkTrpcRouterTypes>;
 export type TDcFileStoreOutput = inferRouterOutputs<serviceLinkTrpcRouterTypes>;
 
+export type TS2SEnvironment =
+  | "development_local"
+  | "development_remote"
+  | "production_remote";
+
 type TDcFileStoreS2SInput = {
-  s2sEnvironment?:
-    | "development_local"
-    | "development_remote"
-    | "production_remote";
+  s2sEnvironment?: TS2SEnvironment;
 };
 
 export const dcFileStoreS2S = ({

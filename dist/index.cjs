@@ -127,18 +127,18 @@ var dcFileStoreS2S = ({
 };
 
 // src/index.ts
-var s2sClient = dcFileStoreS2S({});
-var getPathInfo = s2sClient.fsAccess.getPathInfo.query;
-var getFileInfo = s2sClient.fsAccess.getFileInfo.query;
-var requestUploadUrl = s2sClient.fsAccess.requestUploadUrl.mutate;
-var confirmUpload = s2sClient.fsAccess.confirmUpload.mutate;
-var deleteFile = s2sClient.fsAccess.delete.mutate;
+var createFileStoreClient = (s2sEnvironment = "production_remote") => {
+  const s2sClient = dcFileStoreS2S({ s2sEnvironment });
+  return {
+    getPathInfo: s2sClient.fsAccess.getPathInfo.query,
+    getFileInfo: s2sClient.fsAccess.getFileInfo.query,
+    requestUploadUrl: s2sClient.fsAccess.requestUploadUrl.mutate,
+    confirmUpload: s2sClient.fsAccess.confirmUpload.mutate,
+    deleteFile: s2sClient.fsAccess.delete.mutate
+  };
+};
 
-exports.confirmUpload = confirmUpload;
+exports.createFileStoreClient = createFileStoreClient;
 exports.dcFileStoreZodSchemas = dcFileStoreZodSchemas;
-exports.deleteFile = deleteFile;
-exports.getFileInfo = getFileInfo;
-exports.getPathInfo = getPathInfo;
-exports.requestUploadUrl = requestUploadUrl;
 //# sourceMappingURL=index.cjs.map
 //# sourceMappingURL=index.cjs.map

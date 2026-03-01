@@ -235,22 +235,22 @@ export declare const dcFileStoreServiceLinkTrpcRouter: import("@trpc/server").Cr
                 };
             };
             _input_in: {
-                userId?: number;
                 bucketId?: number;
                 dirId?: number;
+                userId?: number;
                 tokenName?: string;
                 deleteIfExist?: boolean;
             };
             _input_out: {
-                userId?: number;
                 bucketId?: number;
                 dirId?: number;
+                userId?: number;
                 tokenName?: string;
                 deleteIfExist?: boolean;
             };
             _output_in: typeof import("@trpc/server").unsetMarker;
             _output_out: typeof import("@trpc/server").unsetMarker;
-        }, import("@digicroz/js-kit").StdError<"unknown_server_error"> | import("@digicroz/js-kit").StdError<"bucket_not_found"> | import("@digicroz/js-kit").StdError<"directory_not_found"> | import("@digicroz/js-kit").StdError<"max_depth_level_allowed_is_1"> | import("@digicroz/js-kit").StdError<"access_token_already_exist"> | import("@digicroz/js-kit").StdSuccess<{
+        }, import("@digicroz/js-kit").StdError<"bucket_not_found"> | import("@digicroz/js-kit").StdError<"directory_not_found"> | import("@digicroz/js-kit").StdError<"unknown_server_error"> | import("@digicroz/js-kit").StdError<"max_depth_level_allowed_is_1"> | import("@digicroz/js-kit").StdError<"access_token_already_exist"> | import("@digicroz/js-kit").StdSuccess<{
             token: string;
             tokenRecord: {
                 dir_id: number;
@@ -333,12 +333,12 @@ export declare const dcFileStoreServiceLinkTrpcRouter: import("@trpc/server").Cr
                 };
             };
             _input_in: {
-                userId?: number;
                 bucketId?: number;
+                userId?: number;
             };
             _input_out: {
-                userId?: number;
                 bucketId?: number;
+                userId?: number;
             };
             _output_in: typeof import("@trpc/server").unsetMarker;
             _output_out: typeof import("@trpc/server").unsetMarker;
@@ -421,24 +421,20 @@ export declare const dcFileStoreServiceLinkTrpcRouter: import("@trpc/server").Cr
                         };
                     };
                 };
-                payload: {
-                    serviceSlug: string;
-                    serviceName: string;
-                };
             };
             _input_in: {
-                token?: string;
                 pathInSlug?: string;
                 createDirIfNotExist?: boolean;
+                token?: string;
             };
             _input_out: {
-                token?: string;
                 pathInSlug?: string;
                 createDirIfNotExist?: boolean;
+                token?: string;
             };
             _output_in: typeof import("@trpc/server").unsetMarker;
             _output_out: typeof import("@trpc/server").unsetMarker;
-        }, import("@digicroz/js-kit").StdError<"unknown_server_error"> | import("@digicroz/js-kit").StdError<"invalid_access_key_format"> | import("@digicroz/js-kit").StdError<"token_not_found"> | import("@digicroz/js-kit").StdError<"bucket_not_found"> | import("@digicroz/js-kit").StdError<"leading_or_trailing_slash_not_allowed"> | import("@digicroz/js-kit").StdError<"base_dir_not_found"> | import("@digicroz/js-kit").StdError<"invalid_slug"> | import("@digicroz/js-kit").StdError<"parent_directory_not_found"> | import("@digicroz/js-kit").StdError<"dir_max_depth_5_limit_reached"> | import("@digicroz/js-kit").StdError<"slug_already_exists_in_this_location"> | import("@digicroz/js-kit").StdError<"directory_not_found"> | import("@digicroz/js-kit").StdSuccess<import("../../../../prisma/dc_file_store/generatedClient/index.js").Prisma.directoriesCreateManyInput>>;
+        }, import("@digicroz/js-kit").StdError<"invalid_access_key_format"> | import("@digicroz/js-kit").StdError<"token_not_found"> | import("@digicroz/js-kit").StdError<"bucket_not_found"> | import("@digicroz/js-kit").StdError<"leading_or_trailing_slash_not_allowed"> | import("@digicroz/js-kit").StdError<"base_dir_not_found"> | import("@digicroz/js-kit").StdError<"invalid_slug"> | import("@digicroz/js-kit").StdError<"parent_directory_not_found"> | import("@digicroz/js-kit").StdError<"dir_max_depth_5_limit_reached"> | import("@digicroz/js-kit").StdError<"slug_already_exists_in_this_location"> | import("@digicroz/js-kit").StdError<"directory_not_found"> | import("@digicroz/js-kit").StdSuccess<import("../../../../prisma/dc_file_store/generatedClient/index.js").Prisma.directoriesCreateManyInput> | import("@digicroz/js-kit").StdError<"unknown_server_error">>;
         requestUploadUrl: import("@trpc/server").BuildProcedure<"mutation", {
             _config: import("@trpc/server").RootConfig<{
                 ctx: object;
@@ -494,10 +490,6 @@ export declare const dcFileStoreServiceLinkTrpcRouter: import("@trpc/server").Cr
                         };
                     };
                 };
-                payload: {
-                    serviceSlug: string;
-                    serviceName: string;
-                };
             };
             _input_in: {
                 token?: string;
@@ -543,7 +535,7 @@ export declare const dcFileStoreServiceLinkTrpcRouter: import("@trpc/server").Cr
             };
             _output_in: typeof import("@trpc/server").unsetMarker;
             _output_out: typeof import("@trpc/server").unsetMarker;
-        }, import("@digicroz/js-kit").StdError<"unknown_server_error"> | import("@digicroz/js-kit").StdError<"invalid_access_key_format"> | import("@digicroz/js-kit").StdError<"token_not_found"> | import("@digicroz/js-kit").StdError<"bucket_not_found"> | import("@digicroz/js-kit").StdError<"directory_not_found"> | import("@digicroz/js-kit").StdError<"bucket_not_active"> | import("@digicroz/js-kit").StdError<"bucket_size_limit_exceeded"> | import("@digicroz/js-kit").StdError<"file_already_exists"> | import("@digicroz/js-kit").StdSuccess<{
+        }, import("@digicroz/js-kit").StdError<"invalid_access_key_format"> | import("@digicroz/js-kit").StdError<"token_not_found"> | import("@digicroz/js-kit").StdError<"bucket_not_found"> | import("@digicroz/js-kit").StdError<"directory_not_found"> | import("@digicroz/js-kit").StdError<"unknown_server_error"> | import("@digicroz/js-kit").StdError<"bucket_not_active"> | import("@digicroz/js-kit").StdError<"bucket_size_limit_exceeded"> | import("@digicroz/js-kit").StdError<"file_already_exists"> | import("@digicroz/js-kit").StdSuccess<{
             fileId: any;
             presignedUrl: string;
             method: "PUT";
@@ -609,10 +601,6 @@ export declare const dcFileStoreServiceLinkTrpcRouter: import("@trpc/server").Cr
                         };
                     };
                 };
-                payload: {
-                    serviceSlug: string;
-                    serviceName: string;
-                };
             };
             _input_in: {
                 fileId?: number;
@@ -622,7 +610,7 @@ export declare const dcFileStoreServiceLinkTrpcRouter: import("@trpc/server").Cr
             };
             _output_in: typeof import("@trpc/server").unsetMarker;
             _output_out: typeof import("@trpc/server").unsetMarker;
-        }, import("@digicroz/js-kit").StdError<"unknown_server_error"> | import("@digicroz/js-kit").StdError<"bucket_not_found"> | import("@digicroz/js-kit").StdError<"directory_not_found"> | import("@digicroz/js-kit").StdError<"file_not_found"> | import("@digicroz/js-kit").StdError<"already_uploaded"> | import("@digicroz/js-kit").StdError<"invalid_upload_token"> | import("@digicroz/js-kit").StdError<"file_verification_failed"> | import("@digicroz/js-kit").StdSuccess<{
+        }, import("@digicroz/js-kit").StdError<"bucket_not_found"> | import("@digicroz/js-kit").StdError<"directory_not_found"> | import("@digicroz/js-kit").StdError<"unknown_server_error"> | import("@digicroz/js-kit").StdError<"file_not_found"> | import("@digicroz/js-kit").StdError<"already_uploaded"> | import("@digicroz/js-kit").StdError<"invalid_upload_token"> | import("@digicroz/js-kit").StdError<"file_verification_failed"> | import("@digicroz/js-kit").StdSuccess<{
             file_url: string;
             status: import("../../../../prisma/dc_file_store/generatedClient/index.js").$Enums.files_status;
             bucket_id: number;
@@ -692,10 +680,6 @@ export declare const dcFileStoreServiceLinkTrpcRouter: import("@trpc/server").Cr
                         };
                     };
                 };
-                payload: {
-                    serviceSlug: string;
-                    serviceName: string;
-                };
             };
             _input_in: {
                 token?: string;
@@ -709,7 +693,7 @@ export declare const dcFileStoreServiceLinkTrpcRouter: import("@trpc/server").Cr
             };
             _output_in: typeof import("@trpc/server").unsetMarker;
             _output_out: typeof import("@trpc/server").unsetMarker;
-        }, import("@digicroz/js-kit").StdError<"unknown_server_error"> | import("@digicroz/js-kit").StdError<"invalid_access_key_format"> | import("@digicroz/js-kit").StdError<"token_not_found"> | import("@digicroz/js-kit").StdError<"bucket_not_found"> | import("@digicroz/js-kit").StdError<"directory_not_found"> | import("@digicroz/js-kit").StdError<"file_not_found"> | import("@digicroz/js-kit").StdSuccess<{
+        }, import("@digicroz/js-kit").StdError<"invalid_access_key_format"> | import("@digicroz/js-kit").StdError<"token_not_found"> | import("@digicroz/js-kit").StdError<"bucket_not_found"> | import("@digicroz/js-kit").StdError<"directory_not_found"> | import("@digicroz/js-kit").StdError<"unknown_server_error"> | import("@digicroz/js-kit").StdError<"file_not_found"> | import("@digicroz/js-kit").StdSuccess<{
             file_url: string;
             status: import("../../../../prisma/dc_file_store/generatedClient/index.js").$Enums.files_status;
             bucket_id: number;
@@ -779,10 +763,6 @@ export declare const dcFileStoreServiceLinkTrpcRouter: import("@trpc/server").Cr
                         };
                     };
                 };
-                payload: {
-                    serviceSlug: string;
-                    serviceName: string;
-                };
             };
             _input_in: {
                 token?: string;
@@ -794,7 +774,7 @@ export declare const dcFileStoreServiceLinkTrpcRouter: import("@trpc/server").Cr
             };
             _output_in: typeof import("@trpc/server").unsetMarker;
             _output_out: typeof import("@trpc/server").unsetMarker;
-        }, import("@digicroz/js-kit").StdError<"unknown_server_error"> | import("@digicroz/js-kit").StdError<"invalid_access_key_format"> | import("@digicroz/js-kit").StdError<"token_not_found"> | import("@digicroz/js-kit").StdError<"bucket_not_found"> | import("@digicroz/js-kit").StdError<"directory_not_found"> | import("@digicroz/js-kit").StdError<"file_not_found"> | import("@digicroz/js-kit").StdSuccess<{
+        }, import("@digicroz/js-kit").StdError<"invalid_access_key_format"> | import("@digicroz/js-kit").StdError<"token_not_found"> | import("@digicroz/js-kit").StdError<"bucket_not_found"> | import("@digicroz/js-kit").StdError<"directory_not_found"> | import("@digicroz/js-kit").StdError<"unknown_server_error"> | import("@digicroz/js-kit").StdError<"file_not_found"> | import("@digicroz/js-kit").StdSuccess<{
             status: import("../../../../prisma/dc_file_store/generatedClient/index.js").$Enums.files_status;
             bucket_id: number;
             parent_dir_id: number;
