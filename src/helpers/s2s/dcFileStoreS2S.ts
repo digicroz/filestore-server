@@ -34,6 +34,7 @@ const headerFn = () => {
 const trpcBaseUrl = backendHost + `/trpc/dcFileStore/serviceLink`;
 
 export const dcFileStoreS2S = () => {
+    // @ts-ignore - s2s type built against different @trpc/server version
     return createTRPCProxyClient<serviceLinkTrpcRouterTypes>({
         links: [
             httpBatchLink({

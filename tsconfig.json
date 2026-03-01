@@ -1,23 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNext",
-    "lib": ["ES2020", "DOM"],
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022"],
     "declaration": true,
     "declarationMap": true,
-    "declarationDir": "dist",
     "outDir": "dist",
+    "rootDir": "src",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "bundler",
     "strict": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": false,
-    "removeComments": false,
-    "preserveConstEnums": true,
     "sourceMap": true,
 
     "paths": {
