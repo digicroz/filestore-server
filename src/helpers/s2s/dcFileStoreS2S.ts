@@ -2,11 +2,11 @@ import { inferRouterInputs, inferRouterOutputs } from "@trpc/server";
 import { createTRPCProxyClient, httpBatchLink } from "@trpc/client";
 import superjson from "superjson";
 
-import { serviceLinkTrpcRouterTypes } from "@dcFileStoreJsBase/serviceLink/trpcApi/trpcRouter.js";
 import { serviceLinkZodSchemas } from "@dcFileStoreTsBase/trpcApi/zodSchemas.js";
 import { encodeToBase64 } from "@digicroz/js-kit";
 import { backendEndpoint } from "@dcFileStoreServerB2f/constants/development.js";
 import { s2sEnvironment } from "@global/configs/environment.js";
+import { serviceLinkTrpcRouterTypes } from "@dcFileStoreJsBase/serviceLink/trpcApi/trpcRouter.js";
 export const dcFileStoreZodSchemas = serviceLinkZodSchemas;
 
 export type TDcFileStoreInput = inferRouterInputs<serviceLinkTrpcRouterTypes>;
@@ -34,7 +34,6 @@ const headerFn = () => {
 const trpcBaseUrl = backendHost + `/trpc/dcFileStore/serviceLink`;
 
 export const dcFileStoreS2S = () => {
-    // @ts-ignore - s2s type built against different @trpc/server version
     return createTRPCProxyClient<serviceLinkTrpcRouterTypes>({
         links: [
             httpBatchLink({
