@@ -2,7 +2,6 @@ import { createTRPCProxyClient, httpBatchLink } from '@trpc/client';
 import superjson from 'superjson';
 import { z } from 'zod';
 import { zodNameValidation } from '@digicroz/js-kit';
-import dotenv from 'dotenv';
 
 // src/helpers/s2s/dcFileStoreS2S.ts
 var bucketsZodSchema = {
@@ -95,28 +94,21 @@ var backendEndpoint = {
     remote: "https://s1-api.digicroz.com"
   }
 };
-dotenv.config();
-if (process.env.DEVELOPMENT_ENVIRONMENT === "local") ; else if (process.env.DEVELOPMENT_ENVIRONMENT === "remote") ;
-if (process.env.DEVELOPER_NAME === "adarsh") ;
-var s2sEnvironment = "production_remote";
-if (process.env.S2S_ENVIRONMENT === "dev_local") {
-  s2sEnvironment = "development_local";
-} else if (process.env.S2S_ENVIRONMENT === "dev_remote") {
-  s2sEnvironment = "development_remote";
-}
 
 // src/helpers/s2s/dcFileStoreS2S.ts
 var dcFileStoreZodSchemas = serviceLinkZodSchemas;
-var backendHost = "";
-if (s2sEnvironment === "development_local") {
-  backendHost = backendEndpoint.development.local;
-} else if (s2sEnvironment === "development_remote") {
-  backendHost = backendEndpoint.development.remote;
-} else if (s2sEnvironment === "production_remote") {
-  backendHost = backendEndpoint.production.remote;
-}
-var trpcBaseUrl = backendHost + `/trpc/dcFileStore/serviceLink`;
-var dcFileStoreS2S = () => {
+var dcFileStoreS2S = ({
+  s2sEnvironment = "production_remote"
+}) => {
+  let backendHost = "";
+  if (s2sEnvironment === "development_local") {
+    backendHost = backendEndpoint.development.local;
+  } else if (s2sEnvironment === "development_remote") {
+    backendHost = backendEndpoint.development.remote;
+  } else if (s2sEnvironment === "production_remote") {
+    backendHost = backendEndpoint.production.remote;
+  }
+  const trpcBaseUrl = backendHost + `/trpc/dcFileStore/serviceLink`;
   return createTRPCProxyClient({
     links: [
       httpBatchLink({
@@ -129,12 +121,13 @@ var dcFileStoreS2S = () => {
 };
 
 // src/index.ts
-var s2sClient = dcFileStoreS2S();
+var s2sClient = dcFileStoreS2S({});
 var getPathInfo = s2sClient.fsAccess.getPathInfo.query;
+var getFileInfo = s2sClient.fsAccess.getFileInfo.query;
 var requestUploadUrl = s2sClient.fsAccess.requestUploadUrl.mutate;
 var confirmUpload = s2sClient.fsAccess.confirmUpload.mutate;
 var deleteFile = s2sClient.fsAccess.delete.mutate;
 
-export { confirmUpload, dcFileStoreZodSchemas, deleteFile, getPathInfo, requestUploadUrl };
+export { confirmUpload, dcFileStoreZodSchemas, deleteFile, getFileInfo, getPathInfo, requestUploadUrl };
 //# sourceMappingURL=index.js.map
 //# sourceMappingURL=index.js.map

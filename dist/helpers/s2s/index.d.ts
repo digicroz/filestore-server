@@ -900,25 +900,25 @@ export declare const S2S: {
                         immutable: import("zod").ZodOptional<import("zod").ZodBoolean>;
                         staleWhileRevalidate: import("zod").ZodOptional<import("zod").ZodNumber>;
                     }, "strip", import("zod").ZodTypeAny, {
-                        maxAge?: number | undefined;
-                        sMaxAge?: number | undefined;
-                        noCache?: boolean | undefined;
-                        noStore?: boolean | undefined;
-                        mustRevalidate?: boolean | undefined;
-                        proxyRevalidate?: boolean | undefined;
                         public?: boolean | undefined;
                         private?: boolean | undefined;
+                        noCache?: boolean | undefined;
+                        noStore?: boolean | undefined;
+                        maxAge?: number | undefined;
+                        sMaxAge?: number | undefined;
+                        mustRevalidate?: boolean | undefined;
+                        proxyRevalidate?: boolean | undefined;
                         immutable?: boolean | undefined;
                         staleWhileRevalidate?: number | undefined;
                     }, {
-                        maxAge?: number | undefined;
-                        sMaxAge?: number | undefined;
-                        noCache?: boolean | undefined;
-                        noStore?: boolean | undefined;
-                        mustRevalidate?: boolean | undefined;
-                        proxyRevalidate?: boolean | undefined;
                         public?: boolean | undefined;
                         private?: boolean | undefined;
+                        noCache?: boolean | undefined;
+                        noStore?: boolean | undefined;
+                        maxAge?: number | undefined;
+                        sMaxAge?: number | undefined;
+                        mustRevalidate?: boolean | undefined;
+                        proxyRevalidate?: boolean | undefined;
                         immutable?: boolean | undefined;
                         staleWhileRevalidate?: number | undefined;
                     }>]>>;
@@ -931,14 +931,14 @@ export declare const S2S: {
                     cacheControl?: {
                         preset: "infinite" | "one-day" | "one-hour" | "no-cache";
                     } | {
-                        maxAge?: number | undefined;
-                        sMaxAge?: number | undefined;
-                        noCache?: boolean | undefined;
-                        noStore?: boolean | undefined;
-                        mustRevalidate?: boolean | undefined;
-                        proxyRevalidate?: boolean | undefined;
                         public?: boolean | undefined;
                         private?: boolean | undefined;
+                        noCache?: boolean | undefined;
+                        noStore?: boolean | undefined;
+                        maxAge?: number | undefined;
+                        sMaxAge?: number | undefined;
+                        mustRevalidate?: boolean | undefined;
+                        proxyRevalidate?: boolean | undefined;
                         immutable?: boolean | undefined;
                         staleWhileRevalidate?: number | undefined;
                     } | undefined;
@@ -951,14 +951,14 @@ export declare const S2S: {
                     cacheControl?: {
                         preset: "infinite" | "one-day" | "one-hour" | "no-cache";
                     } | {
-                        maxAge?: number | undefined;
-                        sMaxAge?: number | undefined;
-                        noCache?: boolean | undefined;
-                        noStore?: boolean | undefined;
-                        mustRevalidate?: boolean | undefined;
-                        proxyRevalidate?: boolean | undefined;
                         public?: boolean | undefined;
                         private?: boolean | undefined;
+                        noCache?: boolean | undefined;
+                        noStore?: boolean | undefined;
+                        maxAge?: number | undefined;
+                        sMaxAge?: number | undefined;
+                        mustRevalidate?: boolean | undefined;
+                        proxyRevalidate?: boolean | undefined;
                         immutable?: boolean | undefined;
                         staleWhileRevalidate?: number | undefined;
                     } | undefined;

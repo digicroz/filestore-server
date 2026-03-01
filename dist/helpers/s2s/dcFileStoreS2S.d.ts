@@ -93,25 +93,25 @@ export declare const dcFileStoreZodSchemas: {
                 immutable: import("zod").ZodOptional<import("zod").ZodBoolean>;
                 staleWhileRevalidate: import("zod").ZodOptional<import("zod").ZodNumber>;
             }, "strip", import("zod").ZodTypeAny, {
-                maxAge?: number | undefined;
-                sMaxAge?: number | undefined;
-                noCache?: boolean | undefined;
-                noStore?: boolean | undefined;
-                mustRevalidate?: boolean | undefined;
-                proxyRevalidate?: boolean | undefined;
                 public?: boolean | undefined;
                 private?: boolean | undefined;
+                noCache?: boolean | undefined;
+                noStore?: boolean | undefined;
+                maxAge?: number | undefined;
+                sMaxAge?: number | undefined;
+                mustRevalidate?: boolean | undefined;
+                proxyRevalidate?: boolean | undefined;
                 immutable?: boolean | undefined;
                 staleWhileRevalidate?: number | undefined;
             }, {
-                maxAge?: number | undefined;
-                sMaxAge?: number | undefined;
-                noCache?: boolean | undefined;
-                noStore?: boolean | undefined;
-                mustRevalidate?: boolean | undefined;
-                proxyRevalidate?: boolean | undefined;
                 public?: boolean | undefined;
                 private?: boolean | undefined;
+                noCache?: boolean | undefined;
+                noStore?: boolean | undefined;
+                maxAge?: number | undefined;
+                sMaxAge?: number | undefined;
+                mustRevalidate?: boolean | undefined;
+                proxyRevalidate?: boolean | undefined;
                 immutable?: boolean | undefined;
                 staleWhileRevalidate?: number | undefined;
             }>]>>;
@@ -124,14 +124,14 @@ export declare const dcFileStoreZodSchemas: {
             cacheControl?: {
                 preset: "infinite" | "one-day" | "one-hour" | "no-cache";
             } | {
-                maxAge?: number | undefined;
-                sMaxAge?: number | undefined;
-                noCache?: boolean | undefined;
-                noStore?: boolean | undefined;
-                mustRevalidate?: boolean | undefined;
-                proxyRevalidate?: boolean | undefined;
                 public?: boolean | undefined;
                 private?: boolean | undefined;
+                noCache?: boolean | undefined;
+                noStore?: boolean | undefined;
+                maxAge?: number | undefined;
+                sMaxAge?: number | undefined;
+                mustRevalidate?: boolean | undefined;
+                proxyRevalidate?: boolean | undefined;
                 immutable?: boolean | undefined;
                 staleWhileRevalidate?: number | undefined;
             } | undefined;
@@ -144,14 +144,14 @@ export declare const dcFileStoreZodSchemas: {
             cacheControl?: {
                 preset: "infinite" | "one-day" | "one-hour" | "no-cache";
             } | {
-                maxAge?: number | undefined;
-                sMaxAge?: number | undefined;
-                noCache?: boolean | undefined;
-                noStore?: boolean | undefined;
-                mustRevalidate?: boolean | undefined;
-                proxyRevalidate?: boolean | undefined;
                 public?: boolean | undefined;
                 private?: boolean | undefined;
+                noCache?: boolean | undefined;
+                noStore?: boolean | undefined;
+                maxAge?: number | undefined;
+                sMaxAge?: number | undefined;
+                mustRevalidate?: boolean | undefined;
+                proxyRevalidate?: boolean | undefined;
                 immutable?: boolean | undefined;
                 staleWhileRevalidate?: number | undefined;
             } | undefined;
@@ -190,7 +190,10 @@ export declare const dcFileStoreZodSchemas: {
 };
 export type TDcFileStoreInput = inferRouterInputs<serviceLinkTrpcRouterTypes>;
 export type TDcFileStoreOutput = inferRouterOutputs<serviceLinkTrpcRouterTypes>;
-export declare const dcFileStoreS2S: () => {
+type TDcFileStoreS2SInput = {
+    s2sEnvironment?: "development_local" | "development_remote" | "production_remote";
+};
+export declare const dcFileStoreS2S: ({ s2sEnvironment, }: TDcFileStoreS2SInput) => {
     buckets: {
         getBuckets: {
             query: import("@trpc/client").Resolver<import("@trpc/server").BuildProcedure<"query", {
@@ -998,4 +1001,5 @@ export declare const dcFileStoreS2S: () => {
         };
     };
 };
+export {};
 //# sourceMappingURL=dcFileStoreS2S.d.ts.map

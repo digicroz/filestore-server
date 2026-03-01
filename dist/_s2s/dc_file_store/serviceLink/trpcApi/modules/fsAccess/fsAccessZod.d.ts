@@ -37,25 +37,25 @@ export declare const fsAccessZodSchema: {
             immutable: z.ZodOptional<z.ZodBoolean>;
             staleWhileRevalidate: z.ZodOptional<z.ZodNumber>;
         }, "strip", z.ZodTypeAny, {
-            maxAge?: number | undefined;
-            sMaxAge?: number | undefined;
-            noCache?: boolean | undefined;
-            noStore?: boolean | undefined;
-            mustRevalidate?: boolean | undefined;
-            proxyRevalidate?: boolean | undefined;
             public?: boolean | undefined;
             private?: boolean | undefined;
+            noCache?: boolean | undefined;
+            noStore?: boolean | undefined;
+            maxAge?: number | undefined;
+            sMaxAge?: number | undefined;
+            mustRevalidate?: boolean | undefined;
+            proxyRevalidate?: boolean | undefined;
             immutable?: boolean | undefined;
             staleWhileRevalidate?: number | undefined;
         }, {
-            maxAge?: number | undefined;
-            sMaxAge?: number | undefined;
-            noCache?: boolean | undefined;
-            noStore?: boolean | undefined;
-            mustRevalidate?: boolean | undefined;
-            proxyRevalidate?: boolean | undefined;
             public?: boolean | undefined;
             private?: boolean | undefined;
+            noCache?: boolean | undefined;
+            noStore?: boolean | undefined;
+            maxAge?: number | undefined;
+            sMaxAge?: number | undefined;
+            mustRevalidate?: boolean | undefined;
+            proxyRevalidate?: boolean | undefined;
             immutable?: boolean | undefined;
             staleWhileRevalidate?: number | undefined;
         }>]>>;
@@ -68,14 +68,14 @@ export declare const fsAccessZodSchema: {
         cacheControl?: {
             preset: "infinite" | "one-day" | "one-hour" | "no-cache";
         } | {
-            maxAge?: number | undefined;
-            sMaxAge?: number | undefined;
-            noCache?: boolean | undefined;
-            noStore?: boolean | undefined;
-            mustRevalidate?: boolean | undefined;
-            proxyRevalidate?: boolean | undefined;
             public?: boolean | undefined;
             private?: boolean | undefined;
+            noCache?: boolean | undefined;
+            noStore?: boolean | undefined;
+            maxAge?: number | undefined;
+            sMaxAge?: number | undefined;
+            mustRevalidate?: boolean | undefined;
+            proxyRevalidate?: boolean | undefined;
             immutable?: boolean | undefined;
             staleWhileRevalidate?: number | undefined;
         } | undefined;
@@ -88,14 +88,14 @@ export declare const fsAccessZodSchema: {
         cacheControl?: {
             preset: "infinite" | "one-day" | "one-hour" | "no-cache";
         } | {
-            maxAge?: number | undefined;
-            sMaxAge?: number | undefined;
-            noCache?: boolean | undefined;
-            noStore?: boolean | undefined;
-            mustRevalidate?: boolean | undefined;
-            proxyRevalidate?: boolean | undefined;
             public?: boolean | undefined;
             private?: boolean | undefined;
+            noCache?: boolean | undefined;
+            noStore?: boolean | undefined;
+            maxAge?: number | undefined;
+            sMaxAge?: number | undefined;
+            mustRevalidate?: boolean | undefined;
+            proxyRevalidate?: boolean | undefined;
             immutable?: boolean | undefined;
             staleWhileRevalidate?: number | undefined;
         } | undefined;
