@@ -90,25 +90,25 @@ export declare const serviceLinkZodSchemas: {
                 immutable: import("zod").ZodOptional<import("zod").ZodBoolean>;
                 staleWhileRevalidate: import("zod").ZodOptional<import("zod").ZodNumber>;
             }, "strip", import("zod").ZodTypeAny, {
-                public?: boolean | undefined;
-                private?: boolean | undefined;
-                noCache?: boolean | undefined;
-                noStore?: boolean | undefined;
                 maxAge?: number | undefined;
                 sMaxAge?: number | undefined;
+                noCache?: boolean | undefined;
+                noStore?: boolean | undefined;
                 mustRevalidate?: boolean | undefined;
                 proxyRevalidate?: boolean | undefined;
+                public?: boolean | undefined;
+                private?: boolean | undefined;
                 immutable?: boolean | undefined;
                 staleWhileRevalidate?: number | undefined;
             }, {
-                public?: boolean | undefined;
-                private?: boolean | undefined;
-                noCache?: boolean | undefined;
-                noStore?: boolean | undefined;
                 maxAge?: number | undefined;
                 sMaxAge?: number | undefined;
+                noCache?: boolean | undefined;
+                noStore?: boolean | undefined;
                 mustRevalidate?: boolean | undefined;
                 proxyRevalidate?: boolean | undefined;
+                public?: boolean | undefined;
+                private?: boolean | undefined;
                 immutable?: boolean | undefined;
                 staleWhileRevalidate?: number | undefined;
             }>]>>;
@@ -121,14 +121,14 @@ export declare const serviceLinkZodSchemas: {
             cacheControl?: {
                 preset: "infinite" | "one-day" | "one-hour" | "no-cache";
             } | {
-                public?: boolean | undefined;
-                private?: boolean | undefined;
-                noCache?: boolean | undefined;
-                noStore?: boolean | undefined;
                 maxAge?: number | undefined;
                 sMaxAge?: number | undefined;
+                noCache?: boolean | undefined;
+                noStore?: boolean | undefined;
                 mustRevalidate?: boolean | undefined;
                 proxyRevalidate?: boolean | undefined;
+                public?: boolean | undefined;
+                private?: boolean | undefined;
                 immutable?: boolean | undefined;
                 staleWhileRevalidate?: number | undefined;
             } | undefined;
@@ -141,14 +141,14 @@ export declare const serviceLinkZodSchemas: {
             cacheControl?: {
                 preset: "infinite" | "one-day" | "one-hour" | "no-cache";
             } | {
-                public?: boolean | undefined;
-                private?: boolean | undefined;
-                noCache?: boolean | undefined;
-                noStore?: boolean | undefined;
                 maxAge?: number | undefined;
                 sMaxAge?: number | undefined;
+                noCache?: boolean | undefined;
+                noStore?: boolean | undefined;
                 mustRevalidate?: boolean | undefined;
                 proxyRevalidate?: boolean | undefined;
+                public?: boolean | undefined;
+                private?: boolean | undefined;
                 immutable?: boolean | undefined;
                 staleWhileRevalidate?: number | undefined;
             } | undefined;
