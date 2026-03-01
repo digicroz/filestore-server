@@ -1,0 +1,26 @@
+{
+  "appNameHelper.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\helpers\\appNameHelper.ts",
+    "mtime": 1731726018000,
+    "localDate": "16/11/2024, 8:30:18 am",
+    "hash": "2d090415c56180962992087819711ce57e945731"
+  },
+  "challenge.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\helpers\\challenge.ts",
+    "mtime": 1732714756000,
+    "localDate": "27/11/2024, 7:09:16 pm",
+    "hash": "189cc1c5dcaa42dabde03b06be59d7ad1e8a2b8f"
+  },
+  "fileCache.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\helpers\\fileCache.ts",
+    "mtime": 1771783159862,
+    "localDate": "22/2/2026, 11:29:19 pm",
+    "hash": "cbe58b98ef6f6fb3d03a7008d48ba38048492572"
+  },
+  "fileSize.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\helpers\\fileSize.ts",
+    "mtime": 1731726018000,
+    "localDate": "16/11/2024, 8:30:18 am",
+    "hash": "ab6ed0f587815fcd7d89e0f477a471fd432ae50a"
+  }
+}

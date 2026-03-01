@@ -1,0 +1,14 @@
+{
+  "index-browser.d.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\prisma\\dc_file_store\\generatedClient\\runtime\\index-browser.d.ts",
+    "mtime": 1771618682560,
+    "localDate": "21/2/2026, 1:48:02 am",
+    "hash": "efcbf061bd4c1c94e60ab250f877b9b3f5888b2f"
+  },
+  "library.d.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\prisma\\dc_file_store\\generatedClient\\runtime\\library.d.ts",
+    "mtime": 1771618682565,
+    "localDate": "21/2/2026, 1:48:02 am",
+    "hash": "b378f2ab7d3fba17738aa7be82da1eca93f74d60"
+  }
+}

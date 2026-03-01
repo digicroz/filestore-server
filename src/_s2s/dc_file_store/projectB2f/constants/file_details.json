@@ -1,0 +1,56 @@
+{
+  "apkBuilds.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\constants\\apkBuilds.ts",
+    "mtime": 1731726018000,
+    "localDate": "16/11/2024, 8:30:18 am",
+    "hash": "ae66143f40f4fc1a004aeda566a1a9cc6b910389"
+  },
+  "appDetails.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\constants\\appDetails.ts",
+    "mtime": 1766256215446,
+    "localDate": "21/12/2025, 12:13:35 am",
+    "hash": "d29bae06b3b64d3a6a0d0c9137f738038ce6a031"
+  },
+  "contests.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\constants\\contests.ts",
+    "mtime": 1732641868000,
+    "localDate": "26/11/2024, 10:54:28 pm",
+    "hash": "2f967df735bae682127ed13cdc730331985a8433"
+  },
+  "enumsData.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\constants\\enumsData.ts",
+    "mtime": 1766276879711,
+    "localDate": "21/12/2025, 5:57:59 am",
+    "hash": "216890397551a2f3bb7b6fe75728473f6d4b14fb"
+  },
+  "featuresConfig.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\constants\\featuresConfig.ts",
+    "mtime": 1733131868000,
+    "localDate": "2/12/2024, 3:01:08 pm",
+    "hash": "deb427dbc406e37ab41b13dd2814ec934a6fc50d"
+  },
+  "games.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\constants\\games.ts",
+    "mtime": 1731726018000,
+    "localDate": "16/11/2024, 8:30:18 am",
+    "hash": "202baf3f922806027d553c22863b78d64371a9fc"
+  },
+  "projectInfo.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\constants\\projectInfo.ts",
+    "mtime": 1767531685479,
+    "localDate": "4/1/2026, 6:31:25 pm",
+    "hash": "78587f8790c724521a652c893bb706f8d6855b8a"
+  },
+  "support.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\constants\\support.ts",
+    "mtime": 1731726018000,
+    "localDate": "16/11/2024, 8:30:18 am",
+    "hash": "eb5c93b4a7e9320b5fb7d57705cf9ffd1739b0fc"
+  },
+  "wallet.ts": {
+    "sourceFilePath": "C:\\digicroz-repos\\digicroz\\file_store_service\\backend\\src\\dc_file_store\\projectB2f\\constants\\wallet.ts",
+    "mtime": 1732384674000,
+    "localDate": "23/11/2024, 11:27:54 pm",
+    "hash": "3f83090a4ca788e8cfef6d72f9a822781f7a7ff3"
+  }
+}
