@@ -1,6 +1,6 @@
 export const appDetails = {
     appName: "dcFileStore",
     appSlug: "dcFileStore",
-    ownerName: "Ajit kumar yadav",
+    ownerName: "Digicroz",
     appId: 1,
 };
