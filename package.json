@@ -1,6 +1,6 @@
 {
   "name": "@digicroz/filestore-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Server-side SDK for DC FileStore — provides methods for file upload, download, and management",
   "keywords": [
     "typescript",
