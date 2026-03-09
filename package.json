@@ -51,6 +51,8 @@
     "test:coverage:watch": "vitest --coverage",
     "prepublishOnly": "npm run clean  && npm run build",
     "release:patch": "npm version patch",
+    "release:minor": "npm version minor",
+    "release:major": "npm version major",
     "postversion": "git push && git push --tags && npm publish",
     "link": "npm run build && npm link",
     "unlink": "npm unlink -g @digicroz/filestore-server"
