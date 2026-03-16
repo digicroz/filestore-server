@@ -28,10 +28,10 @@ npm install @digicroz/filestore-server
 Import and initialize the client:
 
 ```typescript
-import { createFileStoreClient } from "@digicroz/filestore-server";
+import { createFileStoreClient } from "@digicroz/filestore-server"
 
 // Initialize the client with environment
-const client = createFileStoreClient("production_remote");
+const client = createFileStoreClient("production_remote")
 ```
 
 ### Available Methods
