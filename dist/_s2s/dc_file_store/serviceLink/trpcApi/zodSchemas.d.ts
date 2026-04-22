@@ -53,6 +53,13 @@ export declare const serviceLinkZodSchemas: {
         }>;
     };
     fsAccess: {
+        getBucketStats: import("zod").ZodObject<{
+            token: import("zod").ZodString;
+        }, "strip", import("zod").ZodTypeAny, {
+            token: string;
+        }, {
+            token: string;
+        }>;
         getPathInfo: import("zod").ZodObject<{
             token: import("zod").ZodString;
             pathInSlug: import("zod").ZodString;

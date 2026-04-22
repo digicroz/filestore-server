@@ -3,6 +3,9 @@ import { z } from 'zod';
 
 // src/_s2s/dc_file_store/serviceLink/trpcApi/modules/fsAccess/fsAccessZod.ts
 var fsAccessZodSchema = {
+  getBucketStats: z.object({
+    token: z.string()
+  }),
   getPathInfo: z.object({
     token: z.string(),
     pathInSlug: z.string({ required_error: "pathInSlug is Requires" }),

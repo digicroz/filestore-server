@@ -5,6 +5,9 @@ var zod = require('zod');
 
 // src/_s2s/dc_file_store/serviceLink/trpcApi/modules/fsAccess/fsAccessZod.ts
 var fsAccessZodSchema = {
+  getBucketStats: zod.z.object({
+    token: zod.z.string()
+  }),
   getPathInfo: zod.z.object({
     token: zod.z.string(),
     pathInSlug: zod.z.string({ required_error: "pathInSlug is Requires" }),

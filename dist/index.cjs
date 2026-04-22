@@ -28,6 +28,9 @@ var bucketsZodSchema = {
   })
 };
 var fsAccessZodSchema = {
+  getBucketStats: zod.z.object({
+    token: zod.z.string()
+  }),
   getPathInfo: zod.z.object({
     token: zod.z.string(),
     pathInSlug: zod.z.string({ required_error: "pathInSlug is Requires" }),
@@ -130,6 +133,7 @@ var dcFileStoreS2S = ({
 var createFileStoreClient = (s2sEnvironment = "production_remote") => {
   const s2sClient = dcFileStoreS2S({ s2sEnvironment });
   return {
+    getBucketStats: s2sClient.fsAccess.getBucketStats.query,
     getPathInfo: s2sClient.fsAccess.getPathInfo.query,
     getFileInfo: s2sClient.fsAccess.getFileInfo.query,
     requestUploadUrl: s2sClient.fsAccess.requestUploadUrl.mutate,

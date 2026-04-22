@@ -1,5 +1,12 @@
 import { z } from "zod";
 export declare const fsAccessZodSchema: {
+    getBucketStats: z.ZodObject<{
+        token: z.ZodString;
+    }, "strip", z.ZodTypeAny, {
+        token: string;
+    }, {
+        token: string;
+    }>;
     getPathInfo: z.ZodObject<{
         token: z.ZodString;
         pathInSlug: z.ZodString;

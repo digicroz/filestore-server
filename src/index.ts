@@ -16,6 +16,7 @@ export const createFileStoreClient = (
 ) => {
   const s2sClient = dcFileStoreS2S({ s2sEnvironment });
   return {
+    getBucketStats: s2sClient.fsAccess.getBucketStats.query,
     getPathInfo: s2sClient.fsAccess.getPathInfo.query,
     getFileInfo: s2sClient.fsAccess.getFileInfo.query,
     requestUploadUrl: s2sClient.fsAccess.requestUploadUrl.mutate,

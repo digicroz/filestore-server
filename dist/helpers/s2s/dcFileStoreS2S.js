@@ -22,6 +22,9 @@ var bucketsZodSchema = {
   })
 };
 var fsAccessZodSchema = {
+  getBucketStats: z.object({
+    token: z.string()
+  }),
   getPathInfo: z.object({
     token: z.string(),
     pathInSlug: z.string({ required_error: "pathInSlug is Requires" }),
