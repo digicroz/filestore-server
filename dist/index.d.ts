@@ -67,19 +67,21 @@ export declare const createFileStoreClient: (s2sEnvironment?: TS2SEnvironment) =
         };
         _output_in: typeof import("@trpc/server").unsetMarker;
         _output_out: typeof import("@trpc/server").unsetMarker;
-    }, import("@digicroz/js-kit").StdError<"unknown_server_error", undefined> | import("@digicroz/js-kit").StdError<"invalid_access_key_format", undefined> | import("@digicroz/js-kit").StdError<"token_not_found", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_found", undefined> | {
-        status: import("./_s2s/dc_file_store/prisma/dc_file_store/generatedClient/index.js").$Enums.buckets_status;
-        bucket_id: number;
-        org_id: number;
-        bucket_name: string;
-        bucket_slug: string;
-        total_size_bytes: bigint;
-        max_size_bytes: bigint;
-        visibility: import("./_s2s/dc_file_store/prisma/dc_file_store/generatedClient/index.js").$Enums.buckets_visibility;
-        created_by: number;
-        created_at_unix: bigint;
-        updated_at_unix: bigint;
-    }>>;
+    }, import("@digicroz/js-kit").StdError<"invalid_access_key_format", undefined> | import("@digicroz/js-kit").StdError<"token_not_found", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_found", undefined> | import("@digicroz/js-kit").StdSuccess<{
+        bucket: {
+            status: import("./_s2s/dc_file_store/prisma/dc_file_store/generatedClient/index.js").$Enums.buckets_status;
+            bucket_id: number;
+            org_id: number;
+            bucket_name: string;
+            bucket_slug: string;
+            total_size_bytes: bigint;
+            max_size_bytes: bigint;
+            visibility: import("./_s2s/dc_file_store/prisma/dc_file_store/generatedClient/index.js").$Enums.buckets_visibility;
+            created_by: number;
+            created_at_unix: bigint;
+            updated_at_unix: bigint;
+        };
+    }> | import("@digicroz/js-kit").StdError<"unknown_server_error", undefined>>>;
     getPathInfo: import("@trpc/client").Resolver<import("@trpc/server").BuildProcedure<"query", {
         _config: import("@trpc/server").RootConfig<{
             ctx: object;
@@ -137,18 +139,18 @@ export declare const createFileStoreClient: (s2sEnvironment?: TS2SEnvironment) =
             };
         };
         _input_in: {
-            token?: string;
             pathInSlug?: string;
             createDirIfNotExist?: boolean;
+            token?: string;
         };
         _input_out: {
-            token?: string;
             pathInSlug?: string;
             createDirIfNotExist?: boolean;
+            token?: string;
         };
         _output_in: typeof import("@trpc/server").unsetMarker;
         _output_out: typeof import("@trpc/server").unsetMarker;
-    }, import("@digicroz/js-kit").StdError<"unknown_server_error", undefined> | import("@digicroz/js-kit").StdError<"invalid_access_key_format", undefined> | import("@digicroz/js-kit").StdError<"token_not_found", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_found", undefined> | import("@digicroz/js-kit").StdError<"leading_or_trailing_slash_not_allowed", undefined> | import("@digicroz/js-kit").StdError<"base_dir_not_found", undefined> | import("@digicroz/js-kit").StdError<"invalid_slug", undefined> | import("@digicroz/js-kit").StdError<"parent_directory_not_found", undefined> | import("@digicroz/js-kit").StdError<"dir_max_depth_5_limit_reached", undefined> | import("@digicroz/js-kit").StdError<"slug_already_exists_in_this_location", undefined> | import("@digicroz/js-kit").StdError<"r2_client_not_initialized", undefined> | import("@digicroz/js-kit").StdError<"main_bucket_not_configured", undefined> | import("@digicroz/js-kit").StdError<"r2_create_directory_failed", undefined> | import("@digicroz/js-kit").StdError<"directory_not_found", undefined> | import("@digicroz/js-kit").StdSuccess<import("./_s2s/dc_file_store/prisma/dc_file_store/generatedClient/index.js").Prisma.directoriesCreateManyInput>>>;
+    }, import("@digicroz/js-kit").StdError<"invalid_access_key_format", undefined> | import("@digicroz/js-kit").StdError<"token_not_found", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_found", undefined> | import("@digicroz/js-kit").StdError<"unknown_server_error", undefined> | import("@digicroz/js-kit").StdError<"leading_or_trailing_slash_not_allowed", undefined> | import("@digicroz/js-kit").StdError<"base_dir_not_found", undefined> | import("@digicroz/js-kit").StdError<"invalid_slug", undefined> | import("@digicroz/js-kit").StdError<"parent_directory_not_found", undefined> | import("@digicroz/js-kit").StdError<"dir_max_depth_5_limit_reached", undefined> | import("@digicroz/js-kit").StdError<"slug_already_exists_in_this_location", undefined> | import("@digicroz/js-kit").StdError<"r2_client_not_initialized", undefined> | import("@digicroz/js-kit").StdError<"main_bucket_not_configured", undefined> | import("@digicroz/js-kit").StdError<"r2_create_directory_failed", undefined> | import("@digicroz/js-kit").StdError<"directory_not_found", undefined> | import("@digicroz/js-kit").StdSuccess<import("./_s2s/dc_file_store/prisma/dc_file_store/generatedClient/index.js").Prisma.directoriesCreateManyInput>>>;
     getFileInfo: import("@trpc/client").Resolver<import("@trpc/server").BuildProcedure<"query", {
         _config: import("@trpc/server").RootConfig<{
             ctx: object;
@@ -217,7 +219,7 @@ export declare const createFileStoreClient: (s2sEnvironment?: TS2SEnvironment) =
         };
         _output_in: typeof import("@trpc/server").unsetMarker;
         _output_out: typeof import("@trpc/server").unsetMarker;
-    }, import("@digicroz/js-kit").StdError<"unknown_server_error", undefined> | import("@digicroz/js-kit").StdError<"invalid_access_key_format", undefined> | import("@digicroz/js-kit").StdError<"token_not_found", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_found", undefined> | import("@digicroz/js-kit").StdError<"directory_not_found", undefined> | import("@digicroz/js-kit").StdError<"file_not_found", undefined> | import("@digicroz/js-kit").StdSuccess<{
+    }, import("@digicroz/js-kit").StdError<"invalid_access_key_format", undefined> | import("@digicroz/js-kit").StdError<"token_not_found", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_found", undefined> | import("@digicroz/js-kit").StdError<"unknown_server_error", undefined> | import("@digicroz/js-kit").StdError<"directory_not_found", undefined> | import("@digicroz/js-kit").StdError<"file_not_found", undefined> | import("@digicroz/js-kit").StdSuccess<{
         file_url: string;
         status: import("./_s2s/dc_file_store/prisma/dc_file_store/generatedClient/index.js").$Enums.files_status;
         bucket_id: number;
@@ -332,7 +334,7 @@ export declare const createFileStoreClient: (s2sEnvironment?: TS2SEnvironment) =
         };
         _output_in: typeof import("@trpc/server").unsetMarker;
         _output_out: typeof import("@trpc/server").unsetMarker;
-    }, import("@digicroz/js-kit").StdError<"unknown_server_error", undefined> | import("@digicroz/js-kit").StdError<"invalid_access_key_format", undefined> | import("@digicroz/js-kit").StdError<"token_not_found", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_found", undefined> | import("@digicroz/js-kit").StdError<"r2_client_not_initialized", undefined> | import("@digicroz/js-kit").StdError<"directory_not_found", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_active", undefined> | import("@digicroz/js-kit").StdError<"bucket_size_limit_exceeded", undefined> | import("@digicroz/js-kit").StdError<"file_already_exists", undefined> | import("@digicroz/js-kit").StdError<"r2_generate_presigned_upload_failed", undefined> | import("@digicroz/js-kit").StdSuccess<{
+    }, import("@digicroz/js-kit").StdError<"invalid_access_key_format", undefined> | import("@digicroz/js-kit").StdError<"token_not_found", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_found", undefined> | import("@digicroz/js-kit").StdError<"unknown_server_error", undefined> | import("@digicroz/js-kit").StdError<"r2_client_not_initialized", undefined> | import("@digicroz/js-kit").StdError<"directory_not_found", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_active", undefined> | import("@digicroz/js-kit").StdError<"bucket_size_limit_exceeded", undefined> | import("@digicroz/js-kit").StdError<"file_already_exists", undefined> | import("@digicroz/js-kit").StdError<"r2_generate_presigned_upload_failed", undefined> | import("@digicroz/js-kit").StdSuccess<{
         fileId: any;
         presignedUrl: string;
         method: "PUT";
@@ -407,7 +409,7 @@ export declare const createFileStoreClient: (s2sEnvironment?: TS2SEnvironment) =
         };
         _output_in: typeof import("@trpc/server").unsetMarker;
         _output_out: typeof import("@trpc/server").unsetMarker;
-    }, import("@digicroz/js-kit").StdError<"unknown_server_error", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_found", undefined> | import("@digicroz/js-kit").StdError<"r2_client_not_initialized", undefined> | import("@digicroz/js-kit").StdError<"directory_not_found", undefined> | import("@digicroz/js-kit").StdError<"file_not_found", undefined> | import("@digicroz/js-kit").StdError<"already_uploaded", undefined> | import("@digicroz/js-kit").StdError<"invalid_upload_token", undefined> | import("@digicroz/js-kit").StdError<"r2_get_file_details_failed", undefined> | import("@digicroz/js-kit").StdError<"file_verification_failed", undefined> | import("@digicroz/js-kit").StdSuccess<{
+    }, import("@digicroz/js-kit").StdError<"bucket_not_found", undefined> | import("@digicroz/js-kit").StdError<"unknown_server_error", undefined> | import("@digicroz/js-kit").StdError<"r2_client_not_initialized", undefined> | import("@digicroz/js-kit").StdError<"directory_not_found", undefined> | import("@digicroz/js-kit").StdError<"file_not_found", undefined> | import("@digicroz/js-kit").StdError<"already_uploaded", undefined> | import("@digicroz/js-kit").StdError<"invalid_upload_token", undefined> | import("@digicroz/js-kit").StdError<"r2_get_file_details_failed", undefined> | import("@digicroz/js-kit").StdError<"file_verification_failed", undefined> | import("@digicroz/js-kit").StdSuccess<{
         file_url: string;
         status: import("./_s2s/dc_file_store/prisma/dc_file_store/generatedClient/index.js").$Enums.files_status;
         bucket_id: number;
@@ -488,7 +490,7 @@ export declare const createFileStoreClient: (s2sEnvironment?: TS2SEnvironment) =
         };
         _output_in: typeof import("@trpc/server").unsetMarker;
         _output_out: typeof import("@trpc/server").unsetMarker;
-    }, import("@digicroz/js-kit").StdError<"unknown_server_error", undefined> | import("@digicroz/js-kit").StdError<"invalid_access_key_format", undefined> | import("@digicroz/js-kit").StdError<"token_not_found", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_found", undefined> | import("@digicroz/js-kit").StdError<"directory_not_found", undefined> | import("@digicroz/js-kit").StdError<"file_not_found", undefined> | import("@digicroz/js-kit").StdSuccess<{
+    }, import("@digicroz/js-kit").StdError<"invalid_access_key_format", undefined> | import("@digicroz/js-kit").StdError<"token_not_found", undefined> | import("@digicroz/js-kit").StdError<"bucket_not_found", undefined> | import("@digicroz/js-kit").StdError<"unknown_server_error", undefined> | import("@digicroz/js-kit").StdError<"directory_not_found", undefined> | import("@digicroz/js-kit").StdError<"file_not_found", undefined> | import("@digicroz/js-kit").StdSuccess<{
         status: import("./_s2s/dc_file_store/prisma/dc_file_store/generatedClient/index.js").$Enums.files_status;
         bucket_id: number;
         created_at_unix: bigint;
