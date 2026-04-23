@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../../src/_s2s/dc_file_store/projectB2f/constants/featuresConfig.ts"],"names":[],"mappings":";AAAO,IAAM,qBAAA,GAAwB;AAAA,EACjC,mBAAA,EAAqB;AACzB","file":"featuresConfig.js","sourcesContent":["export const projectFeaturesConfig = {\r\n    isChallengesEnabled: false,\r\n};\r\n"]}
